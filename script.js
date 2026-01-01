@@ -254,23 +254,19 @@ function openLetter() {
         const letterText = document.getElementById('letterText');
         const message = `My Dearest Baby Princess,
 
-As we step into 2026, I want you to know that you are the best thing that ever happened to me. Every moment with you feels like a beautiful dream that I never want to wake up from.
+As we step into 2026, I just want you to know one simple thing — you are the best thing that has ever happened to me. Truly. Being with you feels unreal sometimes, like a dream I never want to wake up from. Every moment with you feels special, even the smallest ones.
 
-Thank you, my love, for every tiny moment that felt enormous in my heart. Thank you for every gentle nudge, every playful scold, every smile that made me forget everything else... 
+Thank you for loving me the way you do. Thank you for every little care, every playful scolding, every time you worry about me more than I worry about myself. You’ve made my heart softer, my days happier, and my whole world warmer just by being in it. I didn’t know love could feel this safe and comforting until you.
 
-You are the reason my heart became softer, my days became brighter, and my world feels warmer. Your love has transformed me in ways I never thought possible.
+When you button my shirt, get angry because I didn’t eat, tell me to sleep early, or let me rest in your lap — those moments mean everything to me. That’s when I feel most at peace. That’s when I feel like I belong. With you, I’ve found my home.
 
-When you button my shirt, scold me for not eating, remind me to sleep early, or let me rest in your lap - in all these little moments, I find my home, my peace, my everything.
+Even your playful pinches and teasing me about my “English problems” make me smile every time. And honestly… being your Pookie is something I’m really proud of. There’s no better title in the world for me. 😊
 
-Even your playful pinches and teasing about my "English problems" make me smile! Being your Pookie is the greatest honor of my life. 😊
+Let’s make 2026 our year — softer, deeper, sweeter, and full of memories we haven’t even imagined yet. I promise to love you more every day, to make you laugh, to stand by you, and to take care of you the way you take care of me.
 
-Let's make 2026 the year of us - deeper, softer, sweeter, and full of moments we haven't even dreamed of yet. I promise to love you more each day, to make you laugh, to be there for you always, and to create a lifetime of beautiful memories together.
-
-You are my Baby, my Princess, my Panda-Love, my Forever.
-
-Happy New Year 2026, My Love! ❤️🐼✨
-
-Here's to us, to our love, and to all the magical moments ahead!`;
+You’re my baby, my princess, my panda-love, my forever.
+Happy New Year 2026, my love ❤️🐼✨
+Here’s to us, to our love, and to everything beautiful that’s waiting for us ahead.`;
         
         typeText(letterText, message, 20);
         
