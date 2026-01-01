@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year 2026, My Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Hearts Container -->
+    <div id="floatingHearts"></div>
+
+    <!-- Landing Section -->
+    <section id="landing" class="section active">
+        <div class="landing-content">
+            <h1 class="main-heading">Happy New Year 2026, My Baby ❤️</h1>
+            <p class="subtitle">Click anywhere to start our journey ❤️</p>
+            
+            <!-- Panda with Eye Tracking -->
+            <div class="panda-container">
+                <img src="panda.png" alt="Cute Panda" class="panda-img">
+            </div>
+            
+            <p class="click-hint">✨ Click me, Pookie! ✨</p>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section id="countdown" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Love Story Timeline ❤️</h2>
+            
+            <div class="countdown-grid">
+                <div class="countdown-card">
+                    <div class="countdown-number" id="daysSinceProposal">0</div>
+                    <p class="countdown-label">Days Since You Said Yes</p>
+                    <p class="countdown-date">12th October 2025 💍</p>
+                </div>
+                
+                <div class="countdown-card">
+                    <div class="countdown-number" id="daysSinceFirstKiss">0</div>
+                    <p class="countdown-label">Days Since Our First Kiss</p>
+                    <p class="countdown-date">19th November 2025 💋</p>
+                </div>
+                
+                <div class="countdown-card">
+                    <div class="countdown-number" id="daysOfLove">0</div>
+                    <p class="countdown-label">Days of Loving You</p>
+                    <p class="countdown-date">Every Single Day ❤️</p>
+                </div>
+            </div>
+
+            <button class="next-btn" onclick="goToSection('moments')">Continue Our Story →</button>
+        </div>
+    </section>
+
+    <!-- Special Moments Section -->
+    <section id="moments" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Special Moments ❤️</h2>
+            <p class="section-subtitle">Click each card to reveal my heart...</p>
+            
+            <div class="moments-grid">
+                <!-- Card 1 -->
+                <div class="moment-card" onclick="revealMoment(this)">
+                    <div class="card-front">
+                        <div class="card-icon">👔</div>
+                        <h3>When you buttoned my shirt</h3>
+                        <p class="card-hint">Click to read more...</p>
+                    </div>
+                    <div class="card-back">
+                        <p class="typing-text" data-text="I feel way too good when you button up my shirt. It’s such a small thing, but it makes me melt every time. The way you come close, fix it like it’s your job, and look at me all seriously — it’s honestly so cute.
+
+I love how possessive you get, like “nope, this is mine.” It makes me feel like your little boy who’s being taken care of, and I love that feeling so much. I feel safe, comfy, and secretly very happy inside.
+
+And okay… I’ll admit it — I keep my shirt button open on purpose sometimes, just so you’ll notice and come button it for me again. Because when you do, I can’t stop smiling. 💕"></p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="moment-card" onclick="revealMoment(this)">
+                    <div class="card-front">
+                        <div class="card-icon">🍽️</div>
+                        <h3>When you get angry if I don't eat</h3>
+                        <p class="card-hint">Click to read more...</p>
+                    </div>
+                    <div class="card-back">
+                        <p class="typing-text" data-text="I lowkey find it cute when you get angry at me for not eating. You act all strict, but I know it’s just because you care way too much about me. That little scolding comes straight from love.
+
+Every time you ask, “Did you eat?” I can already hear the lecture coming… but honestly, it makes me feel safe and loved. Being cared for like this by you feels really special — and yeah, I kinda like being scolded by you. 🥰"></p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="moment-card" onclick="revealMoment(this)">
+                    <div class="card-front">
+                        <div class="card-icon">😴</div>
+                        <h3>When you tell me to sleep early</h3>
+                        <p class="card-hint">Click to read more...</p>
+                    </div>
+                    <div class="card-back">
+                        <p class="typing-text" data-text="I find it really cute how you get after me for not sleeping on time. You act all serious, but I know you’re just worried about me. Those “sleep now baby” messages feel like little reminders that someone actually cares.
+
+Even when I try to stay up, I know you’re going to scold me — and honestly, I don’t mind it at all. It makes me feel safe, loved, and taken care of… like I can sleep peacefully just knowing you’re there. 🌙"></p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="moment-card" onclick="revealMoment(this)">
+                    <div class="card-front">
+                        <div class="card-icon">🥺</div>
+                        <h3>When you let me sleep in your lap</h3>
+                        <p class="card-hint">Click to read more...</p>
+                    </div>
+                    <div class="card-back">
+                        <p class="typing-text" data-text="I don’t even know how to explain how good it feels when you let me sleep in your lap. The moment I rest my head there, everything just feels calm. I feel safe, comfortable, and so spoiled at the same time.
+
+The way you take care of me in that moment, like I’m your little boy who needs rest, makes my heart really soft. I honestly never want to move — your lap feels like my favorite place in the world. 🥺💕"></p>
+                    </div>
+                </div>
+
+                <!-- Card 5 - NEW -->
+                <div class="moment-card" onclick="revealMoment(this)">
+                    <div class="card-front">
+                        <div class="card-icon">🤏</div>
+                        <h3>When you pinch me for fun</h3>
+                        <p class="card-hint">Click to read more...</p>
+                    </div>
+                    <div class="card-back">
+                        <p class="typing-text" data-text="Your pinches don’t hurt at all — I just act like they do because it makes you laugh. You pinch me for my mistakes, for fun, and sometimes literally for no reason… and every time you do it with that mischievous smile like you’re proud of yourself.
+
+It feels like your cute way of saying “you’re mine,” and honestly, I love that about you. Those random pinches are just little moments of teasing, laughter, and us being silly together — and I wouldn’t want it any other way. 😄💕"></p>
+                    </div>
+                </div>
+
+                <!-- Card 6 - NEW -->
+                <div class="moment-card" onclick="revealMoment(this)">
+                    <div class="card-front">
+                        <div class="card-icon">📚</div>
+                        <h3>When you call me 'English Problems'</h3>
+                        <p class="card-hint">Click to read more...</p>
+                    </div>
+                    <div class="card-back">
+                        <p class="typing-text" data-text="Hehehe! Okay yes, my English isn’t perfect… but the way you tease me about it is priceless. You make fun of me so confidently, like it’s your favorite hobby, and somehow turn my mistakes into an inside joke we both love.
+
+And when you share my “Pookie” sticker with your teacher and friends? I should be embarrassed — but honestly, I feel proud. Because every time someone says “Pookie,” they’re talking about me… your Pookie. And I lowkey love that title. 🥰"></p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="next-btn" onclick="goToSection('gallery')">See Our Memories →</button>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Beautiful Memories 📸</h2>
+            <p class="section-subtitle">Hover over the photos to see them come alive!</p>
+            
+            <div class="polaroid-grid">
+                <!-- Photo 1 -->
+                <div class="polaroid">
+                    <img src="Selfie.jpeg" alt="Our Memory 1">
+                    <p class="polaroid-caption">Forever my favorite person ❤️</p>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="polaroid">
+                    <img src="Propose - 1 ith flowers.jpeg" alt="Our Memory 2">
+                    <p class="polaroid-caption">The day you said yes! 💍</p>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="polaroid">
+                    <img src="princess.jpeg" alt="Our Memory 3">
+                    <p class="polaroid-caption">My Princess 👸</p>
+                </div>
+
+                <!-- Photo 4 - Pookie Heart Hands -->
+                <div class="polaroid">
+                    <img src="photo4.jpeg" alt="Pookie Heart Hands">
+                    <p class="polaroid-caption">Your Pookie making hearts! 💕</p>
+                </div>
+
+                <!-- Photo 5 -->
+                <div class="polaroid">
+                    <img src="Together.jpeg" alt="Our Memory 5">
+                    <p class="polaroid-caption">Together forever 🌟</p>
+                </div>
+
+                <!-- Photo 6 -->
+                <div class="polaroid">
+                    <img src="together selfie.jpeg" alt="Our Memory 6">
+                    <p class="polaroid-caption">My happiness ☺️</p>
+                </div>
+            </div>
+
+            <button class="next-btn" onclick="goToSection('wishjar')">Make Wishes for 2026 →</button>
+        </div>
+    </section>
+
+    <!-- Wish Jar Section -->
+    <section id="wishjar" class="section">
+        <div class="container">
+            <h2 class="section-title">My Wishes for us for 2026 ✨</h2>
+            <p class="section-subtitle">Watch our dreams come alive...</p>
+            
+            <div class="jar-container">
+                <div class="jar">
+                    <div class="jar-lid"></div>
+                    <div class="jar-body">
+                        <div id="wishesContainer"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="next-btn" onclick="goToSection('letter')">Read My Letter →</button>
+        </div>
+    </section>
+
+    <!-- Love Letter Section -->
+    <section id="letter" class="section">
+        <div class="container">
+            <h2 class="section-title">A Letter For You 💌</h2>
+            
+            <div class="envelope-wrapper" id="envelopeWrapper">
+                <div class="envelope" onclick="openLetter()">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-body"></div>
+                    <div class="heart-seal">❤️</div>
+                    <p class="envelope-text">Click to open</p>
+                </div>
+            </div>
+
+            <div class="letter-content" id="letterContent">
+                <div class="letter-paper">
+                    <div class="letter-header">To My Baby Princess ❤️</div>
+                    <div class="letter-body">
+                        <p id="letterText" class="typing-text-letter"></p>
+                    </div>
+                    <div class="letter-signature">
+                        <p>Forever yours,</p>
+                        <p class="signature">Your Pookie 💕</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="next-btn" id="finalBtn" onclick="goToSection('final')" style="display: none;">Continue →</button>
+        </div>
+    </section>
+
+    <!-- Final Section with Secret Message -->
+    <section id="final" class="section">
+        <div class="container">
+            <div class="final-message">
+                <p id="finalText" class="typing-text-final"></p>
+            </div>
+
+            <!-- Panda with Float Animation -->
+            <div class="final-panda">
+                <img src="panda.png" alt="Our Panda Love" class="floating-panda">
+                <p class="panda-text">Our Love = Infinite 🐼❤️</p>
+            </div>
+
+            <!-- Secret Message Button -->
+            <div class="secret-container">
+                <button class="secret-btn" onclick="revealSecret()">
+                    🤫 Click me for a secret...
+                </button>
+                <div class="secret-message" id="secretMessage">
+                    <p>Hey Baby! 🥰</p>
+                    <p>I know I can be childish and immature sometimes (okay, maybe most times! 😅), but you still love me and that makes me the luckiest person ever!</p>
+                    <p>You're not just my girlfriend, you're my best friend, my teacher (yes, my English teacher too! 😂), my peace, my home.</p>
+                    <p>I promise to love you more than yesterday, less than tomorrow! ❤️</p>
+                    <p>PS: I made this whole website for you! I hope you like it, Princess! 💕</p>
+                    <p>PPS: Yes, I used proper grammar this time! 😄</p>
+                </div>
+            </div>
+
+            <!-- Fireworks Button -->
+            <button class="fireworks-btn" onclick="startFireworks()">
+                🎆 Celebrate Our Love 🎆
+            </button>
+        </div>
+    </section>
+
+    <!-- Fireworks Canvas -->
+    <canvas id="fireworksCanvas"></canvas>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
